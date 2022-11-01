@@ -16,3 +16,13 @@ Page("/", view = "views/hello.jl.html",
           layout = "layouts/app.jl.html",
           model = () -> AppModel |> init_from_storage |> AppModels.handlers,
           context = @__MODULE__)
+
+Page("/pkmodel/", view = "views/pk.jl.html",
+          layout = "layouts/app.jl.html",
+          model = () -> AppModel |> init_from_storage |> AppModels.handlers,
+          context = @__MODULE__)
+
+Page("/samplen/", view = "views/samplen.jl.html",
+        layout = "layouts/app.jl.html",
+        model = () -> AppModel |> init_from_storage |> AppModels.handlers,
+        context = @__MODULE__)
